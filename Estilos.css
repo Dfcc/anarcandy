@@ -1,0 +1,16 @@
+header{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu-item{
+    display: inline-block;
+}
+.popular-courses{
+    box-sizing: content-box;
+    background-color: #5B6AF4;
+}
+footer{
+    background-color: #142347;
+}
