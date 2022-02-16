@@ -40,10 +40,19 @@ nav{
     min-height: 70vh;
     text-align: center;
 }
-.section-exclusive-candies{
-    background-color: white;
-    text-align: center;
-    min-height: auto;
+.product-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 20%;
+}
+.product-container div{
+    display: inline-flex;
+    height:auto;
+}
+.product-container div img{
+    max-width:100%;
+    object-fit: contain;
 }
 footer{
     background-color: #142347;
