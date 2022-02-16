@@ -1,15 +1,49 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
 header{
     background-color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+#logo{
+    width:25%;
+}
+nav{
+    width:100%;
+    text-decoration: none;
+}
 .menu-item{
     display: inline-block;
+    font-size: 1.25rem;
+    padding: 1em 2em;
+    overflow: hidden;
 }
-.popular-courses{
+.menu-item a{
+    text-decoration: none;
+    color: #1e1d17;
+}
+.menu-item a:hover{
+    text-decoration: underline;
+}
+#imagen-inicial{
+    width: 100%;
+    max-height: 400px;
+}
+.section-popular-candies{
+    margin: 0%;
     box-sizing: content-box;
-    background-color: #5B6AF4;
+    background-color:  #e7d6d9;
+    text-decoration: none;
+    min-height: 70vh;
+    text-align: center;
+}
+.section-exclusive-candies{
+    background-color: white;
+    text-align: center;
+    min-height: auto;
 }
 footer{
     background-color: #142347;
