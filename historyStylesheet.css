@@ -45,13 +45,20 @@ h1{
     top: 100px;
 }
 .history-image{
+    /*Centrar imagen horizontalmente*/
     display: block;
+    text-align: center;
+    padding-top: 3%;
     background-color: #C26362;
 }
-.history-content img{
+.history-image img{
     display: block;
-    padding: auto;
-    position: relative;
+    text-align: center;
+    width: 40%;
+    margin-left:auto;
+    margin-right:auto;
+    padding: 3% 25%;
+    position:relative;
 }
 .history-content{
     box-sizing: content-box;
@@ -60,7 +67,7 @@ h1{
     margin:auto;
     text-align: center;
     height: max-content;
-    padding: 10%;
+    padding-top: 0%;
     line-height:3em;
 }
 footer{
@@ -105,14 +112,16 @@ footer{
     }
     .history-image{
         background-color: #C26362;
+        position: relative;
     }
     .history-image img{
-        display: block;
-        margin-top: 50px;
-        margin-left: 70px;
-        height:200px;
+        position:relative;
+        margin:auto;
+        padding: 5% 25%;
+        width:50%;
     }
     .history-content{
+        font-size: 18px;
         line-height: 1.2em;
     }
     footer{
