@@ -45,15 +45,13 @@ h1{
     top: 100px;
 }
 .history-image{
+    display: block;
     background-color: #C26362;
 }
 .history-content img{
     display: block;
-    padding:auto;
+    padding: auto;
     position: relative;
-    margin:auto;
-    padding-top: 119px;
-    height:450px;
 }
 .history-content{
     box-sizing: content-box;
@@ -109,7 +107,9 @@ footer{
         background-color: #C26362;
     }
     .history-image img{
-        padding-top: 50px;
+        display: block;
+        margin-top: 50px;
+        margin-left: 70px;
         height:200px;
     }
     .history-content{
