@@ -3,28 +3,78 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Envío de formulario por WhatsApp</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8"></script>
-
-    <link href="assets/style.css" rel="stylesheet">
-
-
-    <!-- <link rel="stylesheet" href="style.css"> -->
+    <!-- Material Icon CDN -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="assets/style.css">
+    <title>inicio</title>
 </head>
 
 <body>
-    <h1>formulario wtp</h1>
-    <form id="frm">
-        <input type="text" id="name" placeholder="Name" required />
-        <input type="tel" id="phone" placeholder="Phone" required />
-        <input type="email" id="email" placeholder="Email" required />
-        <input type="date" id="date" required />
-        <button type="submit">Enviar</button>
-    </form>
+    <header>
+        <div class="soy_curva_up"></div>
+        <img src="imgs/anarcandi_logo.png" id="logo" alt="logo">
+        <input type="text" placeholder="buscar" id="buscar">
 
-    <!-- <script src="whatsapp.js"></script> -->
+        <nav class="navbar">
+            <ul class="nav-menu">
+                <li class="nav-item"><a class="nav-link active" href="#">Inicio </li>
+                <li class="nav-item"><a href="#" class="nav-link">Historia</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Catalogo</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Producto</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+
+        <div class="soy_curva_down"></div>
+    </header>
+    <main>
+
+        <section id="banner1">
+            <div class="soy_curva_banner_top"></div>
+            <article class="cards-inicio">
+                <h3>Banner</h3>
+                <img src="imgs/choc.png">
+
+            </article>
+            <div class="soy_curva_banner_down"></div>
+        </section>
+
+        <section id="banner2">
+            <div class="soy_curva_banner_top"></div>
+            <article class="cards-inicio">
+                <h3> Nuestros productos estrella</h3>
+                <p>,Chocolates de Sant-Jordi,Caramelos, piruletas</p>
+                <img src="imgs/section2.jpeg">
+
+            </article>
+            <div class="soy_curva_banner_down"></div>
+        </section>
+        <section id="banner3">
+            <div class="soy_curva_banner_top"></div>
+            <article class="cards-inicio">
+                <h3> ofertas y descuentos</h3>
+                <img src="imgs/section3.jpeg">
+            </article>
+            <div class="soy_curva_banner_down"></div>
+        </section>
+
+    </main>
+    <footer>
+        <div class="soy_curva_up"></div>
+        <img src="imgs/whatsapp.png" width="12%">
+        <br>
+        <p>
+            Información de Contacto: Telefono de contacto: +1-202-555-0144 Direccion: 35 169th Drive NE, Arlington,wa, 98223 United States correo electronico: vagisoy201@plexfirm.com
+
+        </p>
+        <div class="soy_curva_down"></div>
+    </footer>
     <script src="assets/app.js"></script>
 </body>
 
