@@ -11,6 +11,7 @@ header{
 }
 #logo{
     width:25%;
+    display: inline-block;
 }
 nav{
     width:100%;
@@ -45,15 +46,20 @@ h1{
     top: 100px;
 }
 .history-image{
+    /*Centrar imagen horizontalmente*/
+    display: block;
+    text-align: center;
+    padding-top: 3%;
     background-color: #C26362;
 }
-.history-content img{
+.history-image img{
     display: block;
-    padding:auto;
-    position: relative;
-    margin:auto;
-    padding-top: 119px;
-    height:450px;
+    text-align: center;
+    width: 40%;
+    margin-left:auto;
+    margin-right:auto;
+    padding: 3% 25%;
+    position:relative;
 }
 .history-content{
     box-sizing: content-box;
@@ -62,7 +68,7 @@ h1{
     margin:auto;
     text-align: center;
     height: max-content;
-    padding: 10%;
+    padding-top: 0%;
     line-height:3em;
 }
 footer{
@@ -107,12 +113,16 @@ footer{
     }
     .history-image{
         background-color: #C26362;
+        position: relative;
     }
     .history-image img{
-        padding-top: 50px;
-        height:200px;
+        position:relative;
+        margin:auto;
+        padding: 5% 25%;
+        width:50%;
     }
     .history-content{
+        font-size: 18px;
         line-height: 1.2em;
     }
     footer{
@@ -122,7 +132,20 @@ footer{
         padding-top: 0%;
     }
 }
-@media only screen and (max-width: 900px) and (min-width: 600px){
+@media only screen and (max-width: 907px) and (min-width: 600px){
+    #logo{
+        display: block;
+       margin: auto;
+        width:50%;
+        position:relative;
+    }
+    .menu-item img{
+        display: block;
+    }
+    .menu-item a{
+        display: block;
+        text-align: center;
+    }
     .history-image img{
         padding-top: 50px;
         height:200px;
