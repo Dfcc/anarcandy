@@ -5,42 +5,149 @@
     font-family: "Montserrat", sans-serif;
 }
 
-h1 {
-    color: red;
+body {
+    background: transparent url(../imgs/background-body.jpg) 0% -23% repeat-y padding-box;
+    background-size: cover;
+    height: 50rem;
+    overflow: hidden;
 }
 
 header {
-    display: flex;
+    position: relative;
     width: 100%;
-    height: 150px;
-    background-color: orange;
+    height: 100px;
+    background-color: white;
+    opacity: 0.9;
     justify-content: space-between;
     align-items: center;
     border-radius: 20rem;
 }
 
+.soy_curva_up {
+    background: transparent url(../imgs/Adornodown.png) 0% 0% repeat-x padding-box;
+    position: absolute;
+    top: -1rem;
+    left: 2rem;
+    height: 51px;
+    width: 97%;
+    z-index: 2;
+}
+
+.soy_curva_down {
+    transform: scaleX(-1);
+    background: transparent url(../imgs/Adornodown.png) 0% 0% repeat-x padding-box;
+    position: absolute;
+    bottom: -15px;
+    height: 43px;
+    width: 107%;
+    z-index: 2;
+}
+
+.soy_curva_banner_down {
+    transform: scaleX(-1);
+    background: transparent url(../imgs/gotas.png) 0% 0% repeat-x padding-box;
+    position: absolute;
+    height: 43px;
+    width: 72%;
+    left: 17rem;
+    z-index: 2;
+    bottom: -2rem;
+}
+
+.soy_curva_banner_top {
+    transform: scaleX(-1);
+    background: transparent url(../imgs/gotas.png) 0% 0% repeat-x padding-box;
+    position: absolute;
+    top: 0rem;
+    height: 43px;
+    width: 72%;
+    left: 17rem;
+    z-index: 2;
+}
+
 #logo {
-    width: 25%;
+    width: 9%;
+    margin-left: 9rem;
+    margin-top: 0rem;
+    position: absolute;
+    z-index: 6;
+}
+
+#titulo {
+    text-align: center;
+    position: relative;
+    top: 3rem;
+    z-index: 999;
+    color: #078642;
+    ;
+}
+
+#buscar {
+    text-align: center;
+    position: absolute;
+    margin: auto;
+    left: 51rem;
+    top: 2rem;
+    font-size: 1.5rem;
+    border-radius: 5rem;
 }
 
 nav {
     text-decoration: none;
+    float: right;
 }
 
-.menu-item {
-    display: inline-flex;
-    font-size: 1.25rem;
-    padding: 1em 2em;
-    overflow: hidden;
+.navbar {
+    padding: 1rem 1.5rem;
+    position: relative;
+    z-index: 999999;
+    right: 4rem;
+    bottom: -1rem;
 }
 
-.menu-item a {
-    text-decoration: none;
-    color: #1e1d17;
+.hamburger {
+    display: none;
 }
 
-.menu-item a:hover {
-    text-decoration: underline;
+.bar {
+    display: block;
+    width: 3rem;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #101010;
+}
+
+.nav-menu {
+    display: block;
+    align-items: center;
+    list-style: none;
+}
+
+.nav-item {
+    margin-left: 2rem;
+    float: left;
+}
+
+.nav-item a.active {
+    border-bottom: 3px solid black;
+}
+
+.nav-link {
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: black;
+}
+
+.nav-link:hover {
+    color: #482ff7;
+}
+
+.nav-logo {
+    font-size: 2.1rem;
+    font-weight: 500;
+    color: #482ff7;
 }
 
 #imagen-inicial {
@@ -48,16 +155,21 @@ nav {
     max-height: 400px;
 }
 
-section {}
+section {
+    position: relative;
+    margin-bottom: -1.5rem;
+}
 
 #catalog {
     display: grid;
-    background: #222;
+    background: transparent;
     width: 100%;
     max-width: 1600px;
-    margin: 2rem auto;
+    margin: auto;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 20px;
+    margin-top: 6rem;
+    height: 41rem;
 }
 
 #history {
@@ -75,37 +187,183 @@ section {}
 }
 
 article img {
-    width: 91%;
-    margin-top: -17%;
+    left: -1rem;
+    width: 102%;
+    margin-top: -3%;
+    opacity: 0.5;
+    border-image: url(imgs/gotas.png) 30;
+    border-radius: 5rem;
+    position: relative;
+}
+
+article img:hover {
+    opacity: 0.5;
 }
 
 article h3 {
     position: absolute;
-    bottom: 0px;
-    background: white;
+    bottom: 2rem;
+    background: #C4C4C4;
+    line-height: 1rem;
+    font-size: 2rem;
+    opacity: 0.7;
     width: 100%;
-    line-height: 3rem;
+    height: 3rem;
+    text-align: left;
+    border-radius: 3rem;
 }
 
-.cards {
+.cards-catalogo {
     padding: auto;
-    height: 15rem;
+    height: 14rem;
     position: relative;
     text-align: center;
     overflow: hidden;
 }
 
+.cards-inicio {
+    height: 14.7rem;
+    cursor: pointer;
+    width: 78%;
+    margin: auto;
+    text-align: center;
+    border-radius: 5rem;
+    overflow: hidden;
+    padding: 10px;
+    border-top: 2px groove rgb(246, 176, 177);
+    border-top: 2px groove rgba(255, 0, 0, .2);
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    box-shadow: 10px 10px 8px 10px #888888;
+}
+
+.cards-inicio:hover {
+    opacity: 0.9;
+}
+
 footer {
-    background-color: #DBB86B;
-    height: 11rem;
+    position: relative;
+    background-color: #7AF400;
+    height: 100px;
     border-radius: 20rem;
+    text-align: center;
+    padding-top: 2rem;
+    opacity: 0.9;
+    margin-top: 2rem;
+}
+
+footer img {
+    width: 8%;
+    margin: auto;
+    margin-top: -2rem;
 }
 
 
 /*  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); use it if you dont want to use mediaqueries*/
 
 @media (max-width: 900px) {
+    body {
+        background-position-x: -14rem;
+    }
+    #buscar {
+        text-align: center;
+        position: absolute;
+        margin: auto;
+        left: 8rem!important;
+        top: 1rem;
+        font-size: 1.2rem;
+        border-radius: 5rem;
+        line-height: 2.5rem;
+    }
     #catalog {
         grid-template-columns: repeat(1, 1fr);
+        margin-top: 3rem;
+    }
+    article img {
+        width: 94%;
+        margin-top: 6%;
+    }
+    .soy_curva_banner_top {
+        left: 4rem;
+    }
+    .soy_curva_banner_down {
+        left: 4rem;
+    }
+    #logo {
+        width: 25%;
+        margin-top: 0rem;
+        left: -8.3rem;
+    }
+    #titulo {
+        text-align: left;
+        left: 0.5rem;
+    }
+    main {
+        padding: 0rem;
+    }
+    article h3 {
+        font-size: 1.3rem;
+        bottom: 0rem;
+        width: 93%;
+        left: 0.3rem;
+        text-align: center;
+        vertical-align: middle;
+        padding: 5px;
+        line-height: 2.9rem;
+    }
+}
+
+@media only screen and (max-width:1640px) {
+    #buscar {
+        left: 30rem;
+    }
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 5rem;
+        background-color: #ffffff96;
+        width: 100%;
+        border-radius: 10px;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+        z-index: 999;
+    }
+    .nav-menu.active {
+        left: 0;
+    }
+    .nav-item {
+        margin: 2.5rem 0;
+        float: none;
+    }
+    .soy_curva_banner_down {
+        left: 4rem !important;
+        top: 12.5rem;
+    }
+    .soy_curva_banner_top {
+        left: 4rem!important;
+        top: 0.2rem;
+    }
+    .hamburger {
+        display: block;
+        cursor: pointer;
+        position: absolute;
+        right: -2.5rem;
+    }
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    article img {
+        width: 100%;
+        margin-top: -1%;
+    }
+    main {
+        padding: 0rem;
     }
 }
